@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+body {
+    margin: 0;
+}
+.container {
+    height: 100vh;
+    background-image: url('https://static.billboard.com/files/2020/05/Music-Festival-Crowd-billboard-kl-1548-1589924089-compressed.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+.keys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.key {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 50px;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border: 2px solid rgb(28, 28, 28);
+    transition: all .07s ease;
+}
+.key kbd {
+    font-family: 'Rampart One', cursive;
+    font-size: 2rem;
+}
+.key .sound {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: rgb(126, 98, 13);
+    transform: translateY(10px);
+}
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
